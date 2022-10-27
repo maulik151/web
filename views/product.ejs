@@ -1,10 +1,5 @@
-<!-- Main Content -->
-<!-- <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-    </div>
-  </main> -->
-  <html>
+<html>
+    <!-- include the header file -->
     <%- include partials/header.ejs %>
         <%- include partials/main_nav.ejs %>
     
@@ -13,7 +8,7 @@
                 <meta charset="utf-8">
     
             </head>
-    
+            <!-- Design for product page-->
             <body>
                 <div class="jumbotron">
                     <div style="display: flex;justify-content: space-between;">
@@ -57,7 +52,6 @@
     
     </html>
     
-    
+    <!-- include the footer file-->
     <%- include partials/bottom_nav.ejs %>
-    
-        <%- include partials/footer.ejs %>
+    <%- include partials/footer.ejs %>

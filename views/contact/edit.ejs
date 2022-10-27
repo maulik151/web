@@ -1,8 +1,8 @@
+<!-- include the header file -->
 <%- include ../partials/header.ejs %>
-
 <%- include ../partials/main_nav.ejs %>
 
-<!-- Content for the Add page -->
+<!-- Design for edit the business contact to list page -->
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
@@ -41,17 +41,16 @@
 
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
-                
+                    <a href="/contact-list/delete/<%= contact._id %>" class="btn btn-danger ">
+                        <i class="fas fa-trash-alt"></i> Delete</a>
                     <a href="/contact-list" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
-
             </form>
         </div>
 
     </div>
 </div>
 
-
+<!-- include the footer file-->
 <%- include ../partials/bottom_nav.ejs %>  
-
 <%- include ../partials/footer.ejs %>
