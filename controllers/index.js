@@ -24,7 +24,7 @@ module.exports.displayProductsPage = (req, res, next) => {
 }
 
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('serviceDetail', { title: 'Services'});
+    res.render('service', { title: 'Services'});
 }
 
 module.exports.displayContactPage = (req, res, next) => {
