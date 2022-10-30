@@ -26,7 +26,7 @@
                 <% for(let count = 0; count < ContactList.length; count++) { %>
                     <tr class="d-flex">
                         <td class="text-center col-2"><%= ContactList[count].contactName %></td>
-                        <td class="text-center col-2"><%= ContactList[count].contactAddress %></td>
+                        <td class="text-center col-2"><%= ContactList[count].contactNumber %></td>
                         <td class="text-center col-6"><%= ContactList[count].emailAddress %></td>
                         <td class="text-center col-1">
                             <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
