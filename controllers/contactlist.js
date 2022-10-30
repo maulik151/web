@@ -29,7 +29,7 @@ module.exports.processAddPage = (req, res, next) => {
     console.log("====processAddPage")
     let newContact = Contactlist({
         "contactName": req.body.contactName,
-        "contactNumber": req.body.contactNumber,
+        "contactAddress": req.body.contactAddress,
         "emailAddress": req.body.emailAddress
     });
     console.log("=====add contact===", req.body)
@@ -72,7 +72,7 @@ module.exports.processEditPage = (req, res, next) => {
     let updatedContact = Contactlist({
         "_id": id,
         "contactName": req.body.contactName,
-        "contactNumber": req.body.contactNumber,
+        "contactAddress": req.body.contactAddress,
         "emailAddress": req.body.emailAddress
     });
     console.log("===updated contact list====", updatedContact)
